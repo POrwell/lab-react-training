@@ -1,5 +1,6 @@
 import './App.css';
 import IdCard from './components/IdCard';
+import Greetings from "./components/Greetings";
 
 const usersArray = [
   {
@@ -26,6 +27,8 @@ function App() {
       {usersArray.map((user) =>
    <IdCard user={user}/>
    )}
+<Greetings lang="de">Ludwig</Greetings>
+<Greetings lang="fr">François</Greetings>
     </div>
   );
 }
